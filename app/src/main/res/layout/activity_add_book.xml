@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/form_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Spinner za status -->
+        <Spinner
+            android:id="@+id/spinner_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- Naslov -->
+        <EditText
+            android:id="@+id/input_title"
+            android:hint="Naslov knjige"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Autor -->
+        <EditText
+            android:id="@+id/input_author"
+            android:hint="Autor knjige"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- Dinamička sekcija -->
+        <LinearLayout
+            android:id="@+id/extra_fields_container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- Bilješke -->
+        <EditText
+            android:id="@+id/input_notes"
+            android:hint="Bilješke"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <!-- Dugme za dodavanje -->
+        <Button
+            android:id="@+id/button_add"
+            android:text="Dodaj knjigu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
