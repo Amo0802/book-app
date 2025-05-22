@@ -21,5 +21,6 @@
         </activity>
         <activity android:name=".BookDetailActivity" />
         <activity android:name=".AddBookActivity" />
+        <activity android:name=".EditBookActivity" />
     </application>
 </manifest>

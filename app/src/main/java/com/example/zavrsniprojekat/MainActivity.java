@@ -50,18 +50,16 @@ public class MainActivity extends FragmentActivity {
                     case 1:
                         return "Trenutno čitam";
                     case 2:
-                        return "Planiram";
+                        return "Planiram da pročitam";
                     default:
                         return null;
                 }
             }
         });
 
-        // Poveži TabLayout sa ViewPager
         TabLayout tabLayout = findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(mViewPager);
 
-        // FAB za dodavanje knjige
         mFab.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, AddBookActivity.class);
             startActivity(intent);

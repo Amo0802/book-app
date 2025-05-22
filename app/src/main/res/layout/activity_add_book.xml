@@ -10,29 +10,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Spinner za status -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/status_knjige_label"
+            android:textStyle="bold"/>
+
         <Spinner
             android:id="@+id/spinner_status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
 
-        <!-- Naslov -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/naslov_knjige_label"
+            android:textStyle="bold"/>
+
         <EditText
             android:id="@+id/input_title"
-            android:hint="Naslov knjige"
+            android:hint="@string/naslov_knjige_hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <!-- Autor -->
-        <EditText
-            android:id="@+id/input_author"
-            android:hint="Autor knjige"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp" />
+            android:text="@string/autor_knjige_label"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
 
-        <!-- Dinamička sekcija -->
+        <EditText
+            android:id="@+id/input_author"
+            android:hint="@string/autor_knjige_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <LinearLayout
             android:id="@+id/extra_fields_container"
             android:orientation="vertical"
@@ -40,18 +55,24 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp" />
 
-        <!-- Bilješke -->
-        <EditText
-            android:id="@+id/input_notes"
-            android:hint="Bilješke"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp" />
+            android:text="@string/biljeske_label"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
 
-        <!-- Dugme za dodavanje -->
+        <EditText
+            android:id="@+id/input_notes"
+            android:hint="@string/biljeske_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
         <Button
             android:id="@+id/button_add"
-            android:text="Dodaj knjigu"
+            android:text="@string/dugme_dodaj"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp" />

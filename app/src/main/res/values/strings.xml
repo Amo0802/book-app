@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">ZavrsniProjekat</string>
+
+    <string name="status_knjige_label">Status knjige</string>
+    <string name="naslov_knjige_label">Naslov knjige</string>
+    <string name="naslov_knjige_hint">Unesite naslov knjige</string>
+    <string name="autor_knjige_label">Autor knjige</string>
+    <string name="autor_knjige_hint">Unesite ime autora</string>
+    <string name="biljeske_label">Bilješke</string>
+    <string name="biljeske_hint">Bilješke o knjizi</string>
+    <string name="dugme_dodaj">Dodaj knjigu</string>
+
+    <string name="naslov_d">Naslov</string>
+    <string name="autor_d">Autor</string>
+    <string name="status_d">Status</string>
+    <string name="biljeske_d">Bilješke</string>
+    <string name="dugme_uredi">Uredi</string>
+    <string name="dugme_obrisi">Obriši</string>
+
+    <string name="datum_pocetka_label_r">Datum početka čitanja</string>
+    <string name="datum_pocetka_hint_r">Datum početka (npr. 01.05.2025)</string>
+    <string name="datum_zavrsetka_label_r">Datum završetka čitanja</string>
+    <string name="datum_zavrsetka_hint_r">Datum završetka</string>
+    <string name="ocjena_label_r">Ocjena (1.0–5.0)</string>
+    <string name="ocjena_hint_r">Ocjena (1.0–5.0)</string>
+
+    <string name="datum_pocetka_label_cr">Datum početka čitanja</string>
+    <string name="datum_pocetka_hint_cr">Datum početka (npr. 01.05.2025)</string>
+    <string name="ukupan_broj_strana_label_cr">Ukupan broj strana</string>
+    <string name="ukupan_broj_strana_hint_cr">Ukupan broj strana</string>
+    <string name="broj_procitanih_strana_label_cr">Broj pročitanih strana</string>
+    <string name="trenutno_procitanih_strana_hint_cr">Trenutno pročitanih strana</string>
+
 </resources>

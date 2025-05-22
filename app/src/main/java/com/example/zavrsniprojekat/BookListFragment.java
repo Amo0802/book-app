@@ -63,7 +63,6 @@ public class BookListFragment extends ListFragment {
     @Override
     public void onResume() {
         super.onResume();
-        // Ponovo filtriraj knjige i obavijesti adapter
         ArrayList<Book> allBooks = BookLab.get(getActivity()).getBooks();
 
         mFilteredBooks.clear();
@@ -91,7 +90,6 @@ public class BookListFragment extends ListFragment {
 
             Book book = getItem(position);
 
-            // Reference na TextViews
             TextView titleTextView = convertView.findViewById(R.id.book_title);
             TextView authorTextView = convertView.findViewById(R.id.book_author);
 

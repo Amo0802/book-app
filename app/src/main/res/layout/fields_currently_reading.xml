@@ -2,23 +2,40 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/datum_pocetka_label_cr"
+        android:textStyle="bold"/>
     <EditText
         android:id="@+id/input_start_date"
-        android:hint="Datum početka (npr. 01.05.2025)"
+        android:hint="@string/datum_pocetka_hint_cr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ukupan_broj_strana_label_cr"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
     <EditText
         android:id="@+id/input_total_pages"
-        android:hint="Ukupan broj strana"
+        android:hint="@string/ukupan_broj_strana_hint_cr"
         android:inputType="number"
         android:maxLength="4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/broj_procitanih_strana_label_cr"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
     <EditText
         android:id="@+id/input_pages_read"
-        android:hint="Trenutno pročitanih strana"
+        android:hint="@string/trenutno_procitanih_strana_hint_cr"
         android:inputType="number"
         android:maxLength="4"
         android:layout_width="match_parent"

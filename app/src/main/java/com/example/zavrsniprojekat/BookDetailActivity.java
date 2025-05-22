@@ -15,7 +15,7 @@ import java.util.UUID;
 
 public class BookDetailActivity extends FragmentActivity {
 
-    public static final String EXTRA_BOOK_ID = "com.example.booktracker.book_id";
+    public static final String EXTRA_BOOK_ID = "book_id_key";
     private Book mBook;
 
     @Override
@@ -48,7 +48,7 @@ public class BookDetailActivity extends FragmentActivity {
                     extra.append("Datum početka: ").append(sdf.format(mBook.getStartDate())).append("\n\n");
                 if (mBook.getEndDate() != null)
                     extra.append("Datum završetka: ").append(sdf.format(mBook.getEndDate())).append("\n\n");
-                extra.append("Ocjena: ").append(mBook.getReview() != null ? mBook.getReview() : "N/A");
+                extra.append("Ocjena: ").append(mBook.getReview() != 0 ? mBook.getReview() : "N/A");
                 break;
 
             case CURRENTLY_READING:
@@ -65,8 +65,8 @@ public class BookDetailActivity extends FragmentActivity {
         extraInfoText.setText(extra.toString());
 
         editButton.setOnClickListener(v -> {
-            Intent intent = new Intent(BookDetailActivity.this, AddBookActivity.class);
-            intent.putExtra(EXTRA_BOOK_ID, mBook.getId());
+            Intent intent = new Intent(BookDetailActivity.this, EditBookActivity.class);
+            intent.putExtra(EditBookActivity.EXTRA_BOOK_ID, mBook.getId());
             startActivity(intent);
         });
 

@@ -18,7 +18,7 @@ public class Book {
     // READ
     private Date startDate;
     private Date endDate;
-    private String review;
+    private double review;
 
     // CURRENTLY_READING
     private int totalPages;
@@ -29,14 +29,12 @@ public class Book {
 
     public Book() {
         id = UUID.randomUUID();
-        status = Status.TO_READ;
     }
 
     public UUID getId() {
         return id;
     }
 
-    // Getters & Setters
     public String getTitle() {
         return title;
     }
@@ -77,11 +75,11 @@ public class Book {
         this.endDate = endDate;
     }
 
-    public String getReview() {
+    public double getReview() {
         return review;
     }
 
-    public void setReview(String review) {
+    public void setReview(double review) {
         this.review = review;
     }
 
